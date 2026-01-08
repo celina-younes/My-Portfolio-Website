@@ -143,11 +143,12 @@
     <p>Feel free to reach out!</p>
     <div class="container">
       <div class="contact-info">
-    <form>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
       <input name="Your name" type="text" placeholder="Your Name">
       <input name="Email" type="email" placeholder="Your Email">
       <textarea name="Message" placeholder="Your Message"></textarea>
-      <button>Send</button>
+      <button type="submit">Send</button>
     </form>
       </div>
       <div class="personalinfo">
