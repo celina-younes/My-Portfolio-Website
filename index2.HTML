@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Celina Younes Gallery</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <style>
+
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    font-family: 'Montserrat', sans-serif;
+} 
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      margin-top:10px;
+      color:#bbab9b;
+      text-align: center; 
+    }
+
+    p {
+      font-size: 1em;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      font-family: sans-serif;
+      overflow-x: hidden; /* Prevents horizontal scroll */
+      text-align: center;
+    }
+
+    .timeline-container {
+        width: 90%;
+        margin: 14% auto;
+  overflow-x: auto; /* Allows horizontal scrolling if items exceed container width */
+}
+
+.timeline {
+  display: flex; /* Key for horizontal alignment */
+  justify-content: space-between; /* Distributes items evenly */
+  list-style: none; /* Removes bullet points */
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+/* The central horizontal line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #ccc;
+  transform: translateY(-50%);
+  z-index: -1; /* Ensures line is behind event markers */
+}
+
+.event {
+  position: relative;
+  flex: 1; /* Ensures items take up equal space */
+  text-align: center;
+  padding-top: 20px; /* Space above the line for content */
+  padding-bottom: 20px; /* Space below the line for content */
+}
+
+/* The circular markers for each event */
+.event::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #98999a;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.event-date {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.event-content {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.event-content a {
+  color: #bbab9b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.event-content a:hover {
+  color: #98999a;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: #000000;
+  background-color: #bbab9b;
+}
+
+  </style>
+</head>
+<body>
+    <h2>Solo Performances Timeline</h2>
+    <p>Here is a chronological overview of my solo dance performances over the years. Watch my performances by clicking on the title below the timeline.</p>
+    <div class="timeline-container">
+  <ul class="timeline">
+    <li class="event">
+      <div class="event-date">2023</div>
+      <div class="event-content"><a href="https://youtu.be/FUf8ujIOuJI?si=CWK1wSdRCHuK4kMO" target="_blank">Human</a></div>
+    </li>
+    <li class="event">
+      <div class="event-date">2024</div>
+      <div class="event-content"><a href="https://youtu.be/eXrTcSOTDUc?si=QbcglG9d4w5-LRbp" target="_blank">Labyrinth</a></div>
+    </li>
+    <li class="event">
+      <div class="event-date">2025</div>
+      <div class="event-content"><a href="https://youtu.be/uJZhZSV2kgw?si=CmRSQNHyvB8stscZ" target="_blank">Engineer</a> | <a href="https://youtu.be/4RfHHoV5suI?si=TgaQomofoq4ICDLt" target="_blank">Break Through</a></div>
+    </li>
+  </ul>
+</div>
+
+<a href="index.html#portfolio" class="back-link">← Back to Main Portfolio</a>
+
+</body>
+</html>
+<!DOCTYPE html>

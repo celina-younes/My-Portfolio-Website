@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Celina Younes Gallery</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <style>
+    *{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    font-family: 'Montserrat', sans-serif;
+    } 
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      font-family: sans-serif;
+      overflow-x: hidden; /* Prevents horizontal scroll */
+    }
+
+    section#portfolio {
+      padding: 100px 0 60px; /* top padding ensures first row isn’t cut */
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 40px;
+      color:#bbab9b; 
+    }
+
+    /* Gallery rows layout */
+    .row, .row1, .row2, .row3 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      margin: 0 auto 24px;
+      max-width: 1300px;
+    }
+
+    .column {
+      flex: 0 0 400px;
+      max-width: 400px;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .column img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+      border-radius: 0px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .column img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
+
+    /* Responsive design */
+    @media (max-width: 900px) {
+      .column {
+        flex: 0 0 40vw;
+        max-width: 40vw;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .column {
+        flex: 0 0 80vw;
+        max-width: 80vw;
+      }
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .back-link:hover {
+      color: #000000;
+      background-color: #bbab9b;
+    }
+  </style>
+</head>
+<body>
+
+  <section id="portfolio">
+    <h2>Dance Gallery</h2>
+
+    <div class="row">
+      <div class="column"><img loading="lazy" src="image/CV8A0050.jpg" alt="Dance photo 1"></div>
+      <div class="column"><img loading="lazy" src="image/CV8A4530-2.jpg" alt="Dance photo 2"></div>
+      <div class="column"><img loading="lazy" src="image/KS0A9202.jpg" alt="Dance photo 3"></div>
+    </div>
+
+    <div class="row1">
+      <div class="column"><img loading="lazy" src="image/CV8A0001.jpg" alt="Dance photo 4"></div>
+      <div class="column"><img loading="lazy" src="image/CV8A0016.jpg" alt="Dance photo 5"></div>
+      <div class="column"><img loading="lazy" src="image/CV8A0034.jpg" alt="Dance photo 6"></div>
+    </div>
+
+    <div class="row2">
+      <div class="column"><img loading="lazy" src="image/CV8A4591.jpg" alt="Dance photo 7"></div>
+      <div class="column"><img loading="lazy" src="image/CV8A0059.jpg" alt="Dance photo 8"></div>
+      <div class="column"><img loading="lazy" src="image/CV8A4503.jpg" alt="Dance photo 9"></div>
+    </div>
+
+    <div class="row3">
+      <div class="column"><img loading="lazy" src="image/CV8A4636.jpg" alt="Dance photo 10"></div>
+      <div class="column"><img loading="lazy" src="image/KS0A9345.jpg" alt="Dance photo 11"></div>
+      <div class="column"><img loading="lazy" src="image/CV8A4817.jpg" alt="Dance photo 12"></div>
+    </div>
+
+    <a href="index.html#portfolio" class="back-link">← Back to Main Portfolio</a>
+  </section>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
+<!DOCTYPE html>
