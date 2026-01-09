@@ -23,6 +23,11 @@ body {
     justify-content: center;
 }
 
+.thank-you {
+    background-image: none;
+    background-color: #f5f5f5;
+}
+
 
 nav {
   position: fixed;
