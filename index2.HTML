@@ -124,6 +124,18 @@
   background-color: #bbab9b;
 }
 
+@media (max-width: 700px) {
+  .timeline {
+    flex-direction: column;
+  }
+  .event {
+    margin-bottom: 20px;
+  }
+  .timeline::before {
+    display: none;
+  }
+}
+
   </style>
 </head>
 <body>
