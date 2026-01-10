@@ -147,6 +147,11 @@ section {
 
   .home-image {
     padding: 10px;
+    justify-content: center;
+  }
+
+  .home-image img {
+    width: 80vw;
   }
 
   .container {
